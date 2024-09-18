@@ -1,0 +1,12 @@
+[Unit]
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/odroid/Desktop/mavserver.py
+Restart=on-failure
+RestartSec=10
+StartLimitInterval=1000
+StartLimitBurst=500
+
+[Install]
+WantedBy=default.target
