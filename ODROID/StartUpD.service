@@ -2,7 +2,7 @@
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 /home/odroid/Desktop/mavserver.py
+ExecStart=/home/odroid/Desktop/mavserver.py
 Restart=on-failure
 RestartSec=10
 StartLimitInterval=1000
